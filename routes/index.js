@@ -10,3 +10,4 @@ router.use('/post',require('./post'));
 //for any furhter rotes,access from here
 //router.use('/routername',require('./routerfile));
 module.exports=router;
+
