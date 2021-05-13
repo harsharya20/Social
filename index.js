@@ -11,16 +11,22 @@ const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 
 const { pass } = require('./config/mongoose');
-const MongoStore = require('connect-mongodb-session')(session); //becoz we have to store session information to the database
+const MongoStore = require('connect-mongodb-session')(session);//becoz we have to store session information to the database
+const sassMiddleware = require('node-sass-middleware');
 
 
+app.use(sassMiddleware({
+    src: './assets/scss',
+    dest: './assets/css',
+    debug:true,
+    outputStyle : 'extended',
+    prefix: '/css'
+}));
 //reading through post request
 app.use(express.urlencoded());
 
 app.use(cookieParser());
 
-// depricated??means ab kaam ni krti, phle chlti thi ab error deti h, videos purani h islye okk 
-// done what was error actually the previous mongodb command is deprecated so i installed the other package and wrote the command acc to that changed line no 14 bs
 app.use(express.static('./assets'));
 app.use(expressLayouts);
 
