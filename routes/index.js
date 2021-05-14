@@ -7,7 +7,7 @@ console.log('router is loaded');
 
 router.get('/',homeController.home);
 router.use('/users',require('./users'));
-router.use('/post',require('./post'));
+router.use('/posts',require('./posts'));
 //for any furhter rotes,access from here
 //router.use('/routername',require('./routerfile));
 module.exports=router;
