@@ -43,11 +43,14 @@ module.exports.signIn =function(req,res){
 //grt the sign up data
 module.exports.create =function(req,res){
     if(req.body.password !=req.body.confirm_password){
+        req.flash('error', 'Password not matched! Try Again');
         return res.redirect('back');
+        
     }
     User.findOne({email:req.body.email}, function(err, user){
+        req.flash('success','THANK YOU for signing up!!');
         if(err){console.log('error in finding user in signing up'); return}
-
+                     
         if(!user){
             User.create(req.body,function(err,user){
                 if(err){console.log('error in creating user while signing up'); return}
@@ -68,7 +71,7 @@ module.exports.createSession =function(req,res){
 
 module.exports.destroySession =function(req,res){
     req.logout();
-    req.flash('success',' You have Logged out!');
+    req.flash('success',' You have been Logged out!');
     
     res.redirect('/');
 }
