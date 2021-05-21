@@ -16,6 +16,7 @@ let posts= await Post.find({})
 });
 
 let users= await User.find({});
+
 return res.render('home',{
   title: "Codeial | Home",
     posts : posts,

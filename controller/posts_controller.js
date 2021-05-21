@@ -8,7 +8,10 @@ module.exports.create= async function(req,res){
             user: req.user._id  
             });
 
-              if(req.xhr){                //check if the req is AJAX request
+              if(req.xhr){      //check if the req is AJAX request
+                //if we populate just the name of the user(we'll not have to send the password to the API),this is how we do it
+                post= await post.populate('user', 'name').execPopulate();
+                            
                   return res.status(200).json({           //return JSON with status
                        data:{
                            post : post
