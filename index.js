@@ -10,6 +10,7 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const passportJWT = require('./config/passport-jwt-strategy');
+const passportGoogle =require('./config/passport-google-oauth2-strategy');
 
 const { pass } = require('./config/mongoose');
 const MongoStore = require('connect-mongodb-session')(session);//becoz we have to store session information to the database
