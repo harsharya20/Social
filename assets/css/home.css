@@ -1,6 +1,8 @@
 #home-container {
-  display: flex; }
+  display: flex;
+  position: relative; }
   #home-container #feed-posts {
+    position: relative;
     width: 70%;
     padding: 10px; }
   #home-container #user-friends {
@@ -8,3 +10,5 @@
     padding: 10px;
     border-left: 1px solid lightgrey;
     border: 200%; }
+  #home-container #posts-list-container {
+    position: relative; }

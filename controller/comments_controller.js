@@ -1,6 +1,13 @@
 const Comment =require('../models/comment');
 const Post = require('../models/post');
 const commentsMailer = require('../mailers/comments_mailer');
+const queue = require('../config/kue');
+const commentEmailWorker = require('../workers/comment_email_worker');
+// const redis = require('ioredis');
+// const connectRedis = require('connect-redis');
+
+
+
 
 module.exports.create= async function(req,res){
 
@@ -20,6 +27,14 @@ module.exports.create= async function(req,res){
                 comment = await comment.populate('user', 'name email').execPopulate();
 
                 commentsMailer.newComment(comment);
+            //    let job = queue.create('emails' , comment).save(function(err){  //putting job into queue created for comment_email_worker.js(for creating worker which is going to send emails)
+            //        if(err){
+            //        console.log('error in creating a queue', err);
+            //        return;
+            //     }
+                    
+            //        console.log('job enqueued' ,job.id);
+            //    });
 
                 if(req.xhr){
                     
