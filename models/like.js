@@ -14,7 +14,7 @@ const likeSchema = new mongoose.Schema({
     onModel: {
         type: String,
         require: true,
-        enum : ['post', 'Comment']  //to ensure only these 2 models contains likes in my db
+        enum : ['Post', 'Comment']  //to ensure only these 2 models contains likes in my db
     }
 },{
     timestamps: true

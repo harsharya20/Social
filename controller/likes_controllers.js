@@ -4,21 +4,21 @@ const Post = require('../models/post');
 
 module.exports.toggleLike = async function(req,res){
     try{
-        //likes/toggle/id=abcde type=POST
+        //likes/toggle/id=abcde type=Post
       let likeable;
       let deleted = false;
 
       if(req.query.type == 'Post'){
-          likeable = await (await Post.findById(req.query.id)).populated('likes');
+          likeable = await Post.findById(req.query.id).populate('likes');
       }else{
-        likeable = await (await Comment.findById(req.query.id)).populated('likes');
+        likeable = await Comment.findById(req.query.id).populate('likes');
       }
      //check if a like already exist
      let existingLike = await Like.findOne({
-         likeable: re.query.id,
+         likeable: req.query.id,
          onModel: req.query.type,
          user: req.user._id
-     });
+     })
 
        //if a like already exist then delete it
        if(existingLike){
@@ -30,12 +30,12 @@ module.exports.toggleLike = async function(req,res){
        }else{
            //else make a new like
            let newLike = await Like.create({
-               user: req.query._id,
+               user: req.user._id,
                likeable: req.query.id,
                onModel: req.query.type
            });
 
-           likeable.likes.push(like._id);
+           likeable.likes.push(newLike._id);
            likeable.save();
 
        }
@@ -51,7 +51,7 @@ module.exports.toggleLike = async function(req,res){
     catch(err){
         console.log(err);
         return res.json(500, {
-            message : 'Internl Server Error'
+            message : 'Internxl Server Error'
          } );
     }
 }
