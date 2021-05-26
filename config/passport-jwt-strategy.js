@@ -4,10 +4,11 @@ const ExtractJWT = require('passport-jwt').ExtractJwt;
 
 //becoz we are finding user from the database
 const User = require('../models/user');
+const env = require('./environment');
 
 let opts = {
     jwtFromRequest : ExtractJWT.fromAuthHeaderAsBearerToken(),
-    secretOrKey : 'codeial'  //encryption and decryption string it is the key
+    secretOrKey :  env.jwt_secret //encryption and decryption string it is the key
 }
 
 //user is alrealdy present in JWT we are just fetching out the id from the Payload and checking if the user is there or not
