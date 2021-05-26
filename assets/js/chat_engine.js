@@ -1,5 +1,7 @@
 //communicating from client side i.e user on browser (frontend)
-
+//firing the element: .emit
+//emit is done on a particular room so that others user dontknow
+//recieving that fired elemnet : .on
 class ChatEngine{
     constructor(chatBoxId, userEmail){
         this.chatBox = $(`#${this.chatBoxId}`);
@@ -13,8 +15,20 @@ class ChatEngine{
     }
 
     connectionHandler(){
+        let self = this;
         this.socket.on('connect', function(){
             console.log('connetion established using sockets...!');
+
+            self.socket.emit('join_room', {
+                user_email: self.userEmail,
+                chatroom: 'codeial'
+
+            });
+                     //detect when user has joined
+            self.socket.on('user_joined', function(data){
+                console.log('a user joined!', data);
+                    
+            });       
         });
     }
 }
