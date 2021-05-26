@@ -1,4 +1,4 @@
-const { toggleLike } = require("../../controller/likes_controllers");
+
 
 {   
     // method to submit the form data for new post using AJAX
@@ -37,7 +37,6 @@ const { toggleLike } = require("../../controller/likes_controllers");
             });
         });
     }
-
 
     // method to create a post in DOM
     let newPostDom = function(post){
