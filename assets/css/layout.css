@@ -3,4 +3,5 @@ body {
   /*  text-align: center;*/
   height: 100%; }
   body #layout-main {
-    position: relative; }
+    position: relative;
+    min-height: 100%; }
