@@ -30,7 +30,7 @@ const development = {
     google_client_id: "698661915476-cvi9sc2jo4nn22tgn68gm0cgunmohjco.apps.googleusercontent.com",
     google_client_secret : "8PNnO6GJ7aPI5eFTqIpy88W3",
     google_call_back_url : "http://localhost:3000/users/auth/google/callback",
-    jwt_secret : 'H9C13RIAd2KP5bMogMX75LONA1WnHJ9E',
+    jwt_secret : 'codeial',
     morgan: {
         mode: 'dev',
         options: {stream: accessLogStream}
@@ -56,7 +56,7 @@ const production ={
     },
     google_client_id: process.env.CODEIAL_CLIENT_ID,
     google_client_secret : process.env.CODEIAL_CLIENT_SECRET,
-    google_call_back_url : process.env.CODEIAL_CALLBACK_URL,
+    google_call_back_url: process.env.CODEIAL_CALLBACK_URL,
     jwt_secret : process.env.CODEIAL_JWT_SECRET,
     morgan: {
         mode: 'combined',
