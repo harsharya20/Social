@@ -44,8 +44,12 @@ app.use(cookieParser());
 
 app.use(express.static(env.asset_path));
 
+
 //make the uploads path available to the browser
 app.use('/uploads', express.static(__dirname + '/uploads'));
+const rfs = require('rotating-file-stream');
+
+app.use(logger(env.morgan.mode, env.morgan.options));
 
 app.use(expressLayouts);
 

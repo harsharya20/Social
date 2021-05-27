@@ -6,10 +6,10 @@ const path = require('path');
 const logDirectory = path.join(__dirname, '../production_logs');
 fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
 
-const accessLogStream = rfs('access.log', {
+const accessLogStream =rfs.createStream('access.log', {
     interval: '1d',
     path: logDirectory
-})
+});
 
 const development = {
     name : 'developement',
@@ -30,7 +30,11 @@ const development = {
     google_client_id: "698661915476-cvi9sc2jo4nn22tgn68gm0cgunmohjco.apps.googleusercontent.com",
     google_client_secret : "8PNnO6GJ7aPI5eFTqIpy88W3",
     google_call_back_url : "http://localhost:3000/users/auth/google/callback",
-    jwt_secret : 'codeial'
+    jwt_secret : 'H9C13RIAd2KP5bMogMX75LONA1WnHJ9E',
+    morgan: {
+        mode: 'dev',
+        options: {stream: accessLogStream}
+    }
 
 }
 
@@ -53,7 +57,11 @@ const production ={
     google_client_id: process.env.CODEIAL_CLIENT_ID,
     google_client_secret : process.env.CODEIAL_CLIENT_SECRET,
     google_call_back_url : process.env.CODEIAL_CALLBACK_URL,
-    jwt_secret : process.env.CODEIAL_JWT_SECRET
+    jwt_secret : process.env.CODEIAL_JWT_SECRET,
+    morgan: {
+        mode: 'combined',
+        options: {stream: accessLogStream}
+    }
 
 }
 
