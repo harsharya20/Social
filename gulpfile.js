@@ -13,7 +13,21 @@ gulp.task('css', function(done){
     .pipe(cssnano())
     .pipe(gulp.dest('./assets.css'));
 
-    return gulp.src('./assets/**/*.css')
+    gulp.src('./assets/**/*.css')
+    .pipe(rev())
+    .pipe(gulp.dest('./public/assets'))
+    .pipe(rev.manifest({
+        cwd: 'public',
+        merge: true
+    }))
+    .pipe(gulp.dest('./public/assets'));
+    done(); 
+});
+
+gulp.task('js', function(done){
+    console.log('#minifying js...');
+    gulp.src('./assets/**/*.js')
+    .pipe(uglify())
     .pipe(rev())
     .pipe(gulp.dest('./public/assets'))
     .pipe(rev.manifest({
@@ -24,26 +38,13 @@ gulp.task('css', function(done){
     done();
 });
 
-gulp.task('js', function(done){
-    console.log('#minifying js...');
-    gulp.src('./assets/**/*.js')
-    .pipe(uglify())
-    .pipe(rev())
-    .pipe(gulp.dest('.public/assets'))
-    .pipe(rev.manifest({
-        cwd: 'public',
-        merge: true
-    }))
-    .pipe(gulp.dest('./public/assets'));
-    done();
-});
 
 gulp.task('images', function(done){
     console.log('compressing images...');
     gulp.src('./assets/**/*.+(png|jpg|gif|svg|jpeg)')
     .pipe(imagemin())
     .pipe(rev())
-    .pipe(gulp.dest('.public/assets'))
+    .pipe(gulp.dest('./public/assets'))
     .pipe(rev.manifest({
         cwd: 'public',
         merge: true
