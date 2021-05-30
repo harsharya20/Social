@@ -40,7 +40,7 @@ app.use(sassMiddleware({
 }));
 }
 //reading through post request
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: false}));
 
 app.use(cookieParser());
 
