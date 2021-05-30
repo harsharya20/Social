@@ -565,3 +565,151 @@
 ::1 - - [28/May/2021:10:56:19 +0000] "GET /comments/destroy/60b0cc51dbc7b675080ec739 HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
 ::1 - - [28/May/2021:10:57:01 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
 ::1 - - [28/May/2021:10:57:01 +0000] "GET / HTTP/1.1" 200 4126 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:11:00 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:11:02 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:32:41 +0000] "GET / HTTP/1.1" 200 3875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:32:42 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:32:43 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:32:49 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:32:55 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:32:55 +0000] "GET / HTTP/1.1" 200 5688 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:33:10 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:33:10 +0000] "GET / HTTP/1.1" 200 4126 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:34:47 +0000] "GET / HTTP/1.1" 200 3875 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:34:48 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:34:49 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:35:17 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:35:18 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:43:45 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:43:45 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:43:48 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:43:54 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:43:54 +0000] "GET / HTTP/1.1" 200 5688 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:43:57 +0000] "GET /users/profile/60af95749429043dcc1e07a2 HTTP/1.1" 200 2507 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:43:59 +0000] "POST /users/update/60af95749429043dcc1e07a2 HTTP/1.1" 302 164 "http://localhost:3000/users/profile/60af95749429043dcc1e07a2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:43:59 +0000] "GET /users/profile/60af95749429043dcc1e07a2 HTTP/1.1" 304 - "http://localhost:3000/users/profile/60af95749429043dcc1e07a2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:08 +0000] "POST /users/update/60af95749429043dcc1e07a2 HTTP/1.1" 302 164 "http://localhost:3000/users/profile/60af95749429043dcc1e07a2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:08 +0000] "GET /users/profile/60af95749429043dcc1e07a2 HTTP/1.1" 200 2550 "http://localhost:3000/users/profile/60af95749429043dcc1e07a2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:10 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/users/profile/60af95749429043dcc1e07a2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:10 +0000] "GET / HTTP/1.1" 200 4126 "http://localhost:3000/users/profile/60af95749429043dcc1e07a2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:12 +0000] "GET /users/profile/60af95749429043dcc1e07a2 HTTP/1.1" 302 72 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:12 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:20 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:20 +0000] "GET / HTTP/1.1" 200 5688 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:21 +0000] "GET /users/profile/60af95749429043dcc1e07a2 HTTP/1.1" 200 2550 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:27 +0000] "GET /users/profile/60afaa7ba4b77e5718886e30 HTTP/1.1" 200 2153 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:31 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:44:31 +0000] "GET / HTTP/1.1" 200 4126 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+[0mGET / [32m200[0m 207.878 ms - 19161[0m
+[0mGET /css/layout-b9fbf2104f.css [33m404[0m 29.476 ms - 164[0m
+[0mGET /css/header-eb972ddfbd.css [33m404[0m 21.917 ms - 164[0m
+[0mGET /css/footer-e03a0ac86b.css [33m404[0m 35.245 ms - 164[0m
+[0mGET /css/comment-86e12bec93.css [33m404[0m 46.732 ms - 165[0m
+[0mGET /css/chat_box-f53a7d4fff.css [33m404[0m 55.087 ms - 166[0m
+[0mGET /css/home-8f28e15510.css [33m404[0m 54.939 ms - 162[0m
+[0mGET /js/home_post_comments-cdf4a3f9e2.js [33m404[0m 25.072 ms - 174[0m
+[0mGET /js/home_posts-2962c571f8.js [33m404[0m 20.594 ms - 166[0m
+[0mGET /js/toggle_likes-ff96e5f597.js [33m404[0m 17.095 ms - 168[0m
+[0mGET /js/chat_engine-aaf94e53ad.js [33m404[0m 11.384 ms - 167[0m
+[0mGET /favicon.ico [33m404[0m 5.549 ms - 150[0m
+[0mGET /users/sign-in [36m304[0m 14.412 ms - -[0m
+[0mGET /css/layout-b9fbf2104f.css [33m404[0m 9.924 ms - 164[0m
+[0mGET /css/header-eb972ddfbd.css [33m404[0m 8.665 ms - 164[0m
+[0mGET /css/footer-e03a0ac86b.css [33m404[0m 5.518 ms - 164[0m
+[0mGET /css/comment-86e12bec93.css [33m404[0m 5.269 ms - 165[0m
+[0mGET /users/auth/google [36m302[0m 7.447 ms - 0[0m
+[0mGET / [36m304[0m 149.156 ms - -[0m
+[0mGET /css/layout-b9fbf2104f.css [33m404[0m 4.798 ms - 164[0m
+[0mGET /css/header-eb972ddfbd.css [33m404[0m 12.600 ms - 164[0m
+[0mGET /css/footer-e03a0ac86b.css [33m404[0m 11.777 ms - 164[0m
+[0mGET /css/comment-86e12bec93.css [33m404[0m 18.327 ms - 165[0m
+[0mGET /css/home-8f28e15510.css [33m404[0m 18.476 ms - 162[0m
+[0mGET /js/home_post_comments-cdf4a3f9e2.js [33m404[0m 16.756 ms - 174[0m
+[0mGET /css/chat_box-f53a7d4fff.css [33m404[0m 15.755 ms - 166[0m
+[0mGET /js/home_posts-2962c571f8.js [33m404[0m 11.497 ms - 166[0m
+[0mGET /js/toggle_likes-ff96e5f597.js [33m404[0m 8.985 ms - 168[0m
+[0mGET /js/chat_engine-aaf94e53ad.js [33m404[0m 7.662 ms - 167[0m
+::1 - - [28/May/2021:11:50:55 +0000] "GET / HTTP/1.1" 200 3875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [28/May/2021:11:50:58 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:17:07:55 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:17:07:56 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:17:07:58 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:17:08:03 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:17:08:04 +0000] "GET / HTTP/1.1" 200 5688 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:17:08:16 +0000] "POST /comments/create HTTP/1.1" 200 319 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:17:08:18 +0000] "GET /comments/destroy/60b2750071d3d663409324a1 HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:00 +0000] "GET / HTTP/1.1" 200 5441 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:01 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:09 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:11 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:11 +0000] "GET / HTTP/1.1" 200 4126 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:14 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:21 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:21 +0000] "GET / HTTP/1.1" 200 5556 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:52 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:52 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:52 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:52 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:52 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:52 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:53 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:53 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:53 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:55 +0000] "GET /comments/destroy/60b282bdf7c77b620478e681 HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:55 +0000] "GET /comments/destroy/60b282bdf7c77b620478e680 HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:55 +0000] "GET /comments/destroy/60b282bdf7c77b620478e67f HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:56 +0000] "GET /comments/destroy/60b282bcf7c77b620478e67e HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:56 +0000] "GET /comments/destroy/60b282bcf7c77b620478e67d HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:57 +0000] "GET /comments/destroy/60b282bcf7c77b620478e67c HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:57 +0000] "GET /comments/destroy/60b282bcf7c77b620478e67b HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:57 +0000] "GET /comments/destroy/60b282bcf7c77b620478e67a HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:06:58 +0000] "GET /comments/destroy/60b282bcf7c77b620478e679 HTTP/1.1" 200 75 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:00 +0000] "POST /comments/create HTTP/1.1" 200 317 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:04 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:04 +0000] "GET / HTTP/1.1" 200 4443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:09 +0000] "POST /comments/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:09 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:10 +0000] "POST /comments/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:10 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:11 +0000] "POST /comments/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:11 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:11 +0000] "POST /comments/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:11 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:11 +0000] "POST /comments/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:11 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:11 +0000] "POST /comments/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:11 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:17 +0000] "POST /comments/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:17 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:21 +0000] "POST /posts/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:21 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:24 +0000] "GET / HTTP/1.1" 200 4192 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:25 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:26 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:26 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:32 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:38 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:39 +0000] "GET / HTTP/1.1" 200 6164 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:44 +0000] "GET /users/sign-in HTTP/1.1" 302 72 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:44 +0000] "GET /users/profile HTTP/1.1" 404 152 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:50 +0000] "GET /users/profile/60afaa7ba4b77e5718886e30 HTTP/1.1" 200 2153 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:07:55 +0000] "GET /users/profile/60af95749429043dcc1e07a2 HTTP/1.1" 200 2550 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:08 +0000] "GET / HTTP/1.1" 200 5917 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:11 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:11 +0000] "GET / HTTP/1.1" 200 4443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:15 +0000] "GET /users/sign-in HTTP/1.1" 200 2227 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:21 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:21 +0000] "GET / HTTP/1.1" 200 6215 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:43 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:43 +0000] "GET / HTTP/1.1" 200 4443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:47 +0000] "POST /comments/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:47 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:48 +0000] "POST /comments/create HTTP/1.1" 302 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:48 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [29/May/2021:18:08:49 +0000] "GET / HTTP/1.1" 200 4192 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [30/May/2021:09:29:18 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [30/May/2021:09:29:18 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [30/May/2021:09:29:20 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [30/May/2021:09:29:26 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [30/May/2021:09:29:26 +0000] "GET / HTTP/1.1" 200 6164 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [30/May/2021:09:29:37 +0000] "POST /comments/create HTTP/1.1" 200 318 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
