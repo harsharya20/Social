@@ -768,3 +768,5 @@
 ::1 - - [30/May/2021:13:21:39 +0000] "GET / HTTP/1.1" 200 6838 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
 ::1 - - [30/May/2021:13:21:42 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
 ::1 - - [30/May/2021:13:21:42 +0000] "GET / HTTP/1.1" 200 4770 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [30/May/2021:13:27:52 +0000] "GET / HTTP/1.1" 200 4519 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [30/May/2021:13:27:54 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
