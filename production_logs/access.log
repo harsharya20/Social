@@ -847,3 +847,6 @@
 ::1 - - [01/Jun/2021:07:44:30 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
 ::1 - - [01/Jun/2021:07:44:30 +0000] "GET / HTTP/1.1" 200 6179 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
 ::1 - - [01/Jun/2021:07:44:34 +0000] "POST /comments/create HTTP/1.1" 200 324 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [01/Jun/2021:09:00:30 +0000] "GET / HTTP/1.1" 200 6592 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [01/Jun/2021:09:00:34 +0000] "GET /api/v1/posts HTTP/1.1" 200 1261 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [01/Jun/2021:09:00:34 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/api/v1/posts" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
