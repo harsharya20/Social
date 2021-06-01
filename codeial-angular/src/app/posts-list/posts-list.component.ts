@@ -12,4 +12,7 @@ export class PostsListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getPosts(): void{
+    
+  }
 }
