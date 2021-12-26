@@ -1,6 +1,6 @@
 //communicating from client side i.e user on browser (frontend)
 //firing the element: .emit
-//emit is done on a particular room so that others user dontknow
+//emit is done on a particular room soat others user dontknow
 //recieving that fired elemnet : .on
 
 //observer which is going to recieve the incominh conenction from all the users
@@ -10,7 +10,7 @@ class ChatEngine{
         this.chatBox = $(`#${chatBoxId}`);
         this.userEmail = userEmail;
 
-        this.socket = io.connect('http://54.85.205.24:5000', {transports: ['websocket','polling','flashsocket']});
+        this.socket = io.connect('http://localhost:5000',{transports:['websocket', 'polling', 'flashsocket']}); 
 
         if (this.userEmail){
             this.connectionHandler();
@@ -40,10 +40,12 @@ class ChatEngine{
 
         // CHANGE :: send a message on clicking the send message button
         $('#send-message').click(function(){
+            console.log($('#chat-message-input'));
             let msg = $('#chat-message-input').val();
-
-            if (msg != ''){
-                self.socket.emit('send_message', {
+            console.log("haefaeg");
+            if(msg != ''){
+                console.log(msg);
+                self.socket.emit('send_message',{
                     message: msg,
                     user_email: self.userEmail,
                     chatroom: 'codeial'
@@ -51,7 +53,7 @@ class ChatEngine{
             }
         });
 
-        self.socket.on('receive_message', function(data){
+        self.socket.on('recieve_message', function(data){
             console.log('message received', data.message);
 
 

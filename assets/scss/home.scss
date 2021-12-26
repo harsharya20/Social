@@ -1,26 +1,57 @@
-#home-container {
-    display: flex;
-    position: relative;
-    #feed-posts{
-        position: relative;
-         width: 70%;
-         padding: 10px;
-         
-    }
+#home-container{
 
-    #user-friends{
-        width: 30%;
-        padding: 10px;
-        
-        border-left: 1px solid lightgrey;
-        border: 200%;
-        
-        
-    }
+	#create-post{
+       border:none;
+       background-color:rgb(255, 255, 255);
+       border-radius: 10px;
+       &:focus{
+		outline: none;
+	}
+	&::placeholder{
+		color: black;
+	}
+	}
+	
+	#post-btn{
+		border-radius:10px;
+		background-color: rgb(223, 211, 243);
+		color: black;
+		border:none;
+		&:focus{
+			outline: none;
+		}
+		&:hover{
+		    background-color: rgb(149, 57, 235);
+		}
+	}
 
-    #posts-list-container{
-        position: relative;
-        
-        
-    }
+	#posts-list-container{
+		margin-left: -2rem;
+	}
+
+	#feed-posts{
+		width: 70%;
+		padding: 10px;
+		background-color: #f2eefd;
+		height: 1rem;
+		h4{
+		color: white;
+		font-family: 'Comfortaa', cursive;
+		 background-image: linear-gradient(to right,#fc654a,transparent);
+		padding: 1rem 1rem 1rem 1rem;
+         border-top-left-radius: 10px;
+         border-bottom-left-radius: 10px;
+		}
+	}
+
+
+	#users-container{
+		width: 30%;
+		padding:10px;
+		border-left: 1px solid #eef1f3;
+		min-height: 50rem;
+		background-color: #d4f4f5;
+		left: 71vw;
+
+	}
 }

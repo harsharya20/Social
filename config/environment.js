@@ -23,7 +23,7 @@ const development = {
         secure: false,
         auth: {
             user: 'harya9263@gmail.com',  
-            pass: 'harsharya123'
+            pass: 'harsharya12345'
         }
         
     },
@@ -66,3 +66,4 @@ const production ={
 }
 
 module.exports = eval(process.env.CODEIAL_ENVIRONMENT) == undefined ? development : eval(process.env.CODEIAL_ENVIRONMENT);
+//module.exports=development;

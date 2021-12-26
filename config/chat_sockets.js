@@ -1,7 +1,11 @@
 //observer which is going to recieve the incominh conenction from all the users
 
 module.exports.chatSockets = function(socketServer){
-let io = require('socket.io')(socketServer);
+let io = require('socket.io')(socketServer,{cors : {
+    origin: "http://localhost:5000",
+     "secure": false,
+    "changeOrigin": true
+  }});
 
 io.sockets.on('connection', function(socket){
     console.log('new connection recieved', socket.id);
@@ -21,6 +25,7 @@ io.sockets.on('connection', function(socket){
 
     //detect send_message and broadcast to everyone in the room
     socket.on('send_message', function(data){
+        console.log(data,"inside send message");
         io.in(data.chatroom).emit('recieve_message', data);
     });
 

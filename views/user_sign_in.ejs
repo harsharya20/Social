@@ -1,12 +1,28 @@
-<h1>SIGN IN</h1>
 
-<form action="/users/create-session" method="POST">
-   
-    <input type="email" name="email" placeholder=" Email" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <input type="submit" value="Sign In">
+<link rel="stylesheet" href="<%= assetPath('css/sign_in.css') %>">
+
+
+<div id="sign-in">
+<h1> SIGN-IN </h1>
+
+<form action="/users/create-session" method="post">
+	<div id="email">
+    <label for="email"> EMAIL </label>
+	<input type="email" name="email" placeholder="Enter Email" required>
+    </div>
+
+    <div id="pass">
+    <label for="password"> PASSWORD </label>
+	<input  type="password" name="password" placeholder="Enter Password" autocomplete="off" required>
+	</div>
+	<button type="submit">Sign In</button>
+
 </form>
 
-<p><button><a href="/users/auth/google">Google Sign In/Sign Up</a></button>
+<p>
+	<a id="g-sign" href="/users/auth/google">Google Sign In/Sign Up</a> 
     
 </p>
+</div>
+
+

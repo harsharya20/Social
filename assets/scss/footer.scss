@@ -1,21 +1,27 @@
-#layout-footer{
-    color: white;
-    a{
-        color: white;
-        text-decoration: none;
-    }
-  
-    
-
-    background: rgb(150, 147, 147);
-    padding: 15px 10px;
-    display: flex;
-    justify-content: flex-start;
-
-    .footer-nav{
-        ul{
-            list-style: none;
-        }
-    }   
+#footer{
+	background-color:gray;
+	height: 6rem;
+	margin-top: 15%;
+	#wm{
+      color: white;
+      display: inline-block;
+	  font-family: 'Comfortaa', cursive;
+	}
+	#footer-links{
+		display: inline-block;
+		margin: 0 1rem 0 1rem;
+		#home-link{
+			border-left:3px solid white;
+			border-right:3px solid white;
+			padding:0 1rem 0 1rem;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+		    font-family: 'Comfortaa', cursive;
+		}
+		:hover{
+		    color: #111519;
+		}
+	}
 }
-
