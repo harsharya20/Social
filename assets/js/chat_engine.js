@@ -42,9 +42,9 @@ class ChatEngine{
         $('#send-message').click(function(){
             console.log($('#chat-message-input'));
             let msg = $('#chat-message-input').val();
-            console.log("haefaeg");
+            
             if(msg != ''){
-                console.log(msg);
+                
                 self.socket.emit('send_message',{
                     message: msg,
                     user_email: self.userEmail,
