@@ -1,19 +1,30 @@
+<!-- <footer>
+     <div id="footer">
+          <h6>© Codeial.All Rrights Reserved</h6>
+          <ul>
+               <li> <a href="/"> Home </a> </li>
+               <li> <a href="/users/profile"> Profile </a> </li>
+          </ul>
+     </div>
+</footer> -->
+
+<link rel="stylesheet" type="text/css" href="<%= assetPath('css/footer.css') %>">
+
+
 <footer id="footer">
     <div>
-
         <div id="wm">
-            &#169;Harsh Arya. All Rights Reserved
+            <p>© Harsh Arya. All Rights Reserved</p>
         </div>
+        <div id="footer-links">
+            <a id="home-link" href="/">Home</a>
 
-    <div id="footer-links">
-        <a id="home-link" href="/">Home</a>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/users/profile">Profile</a>
-                </li>
-            </ul>
+            <%if(locals.user) { %>
+                <a href="/users/profile/<%= user.id %>">Profile</a>
+            <% } else { %>
+                <a href="/users/sign-in">Sign In</a>
+            <% } %>
+        </div>
     </div>
+    <div></div>
 </footer>

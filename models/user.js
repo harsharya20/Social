@@ -21,6 +21,14 @@ const userSchema =new mongoose.Schema({
     avatar : {
         type: String
     },
+    accessToken:{
+      type: String,
+      default: 'abc'
+  },
+  isTokenValid:{
+      type: Boolean,
+      default: false
+  },
     friendships: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Friendship'

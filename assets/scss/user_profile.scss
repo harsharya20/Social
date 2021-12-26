@@ -1,5 +1,94 @@
 body{
-    background-color: aqua;
-    height: 100%;
+	background-color: rgb(225, 255, 255);
 }
 
+#user-profile{
+ 
+#profile-pic{
+	text-align: center;
+	margin: 2rem;
+
+     img{
+     height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	border:3px solid white;
+	&:hover{
+		box-shadow: rgb(162, 195, 255) 5px 5px, rgb(162, 195, 255) 10px 10px,
+    rgb(162, 195, 255) 15px 15px, rgb(162, 195, 255) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+     }
+ }
+}
+
+form{
+
+  text-align: center;
+  width: 40vw;
+  margin: auto;
+  background-color: rgb(162, 195, 255);
+  border-top-left-radius:30px;
+  border-top-right-radius:30px;
+  border-radius: 30px;
+  height: 50vh;
+
+  label{
+		font-family: 'Comfortaa', cursive;
+    color: black;
+
+  }
+
+  input{
+  	background-color: rgb(231, 245, 245);
+  	border-radius:10px;
+  	border:none;
+  	margin: 1rem;
+  	&:focus{
+  		outline: none;
+  	}
+  }
+
+   #upload-pic{
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    cursor: pointer;
+   }
+
+   #update{
+   	background-color: rgb(253, 99, 99);
+   	color: white;
+    font-family: 'Comfortaa', cursive;
+   	&:hover{
+   		background-color:rgb(255, 67, 53);
+   	}
+   }
+
+  
+}
+#x-user-info{
+	text-align: center;
+	margin: auto;
+	background-color: rgb(162, 195, 255);
+	width: 20vw;
+    margin: auto;
+    border-radius: 10px;
+	#name-email{
+       margin: 2rem;
+	}
+	label{
+		color: black;
+    font-family: 'Comfortaa', cursive;
+
+	}
+    small{
+    	color: white;
+    	background-color:#003b75;
+      height: 2rem;
+      width: 7rem;
+      border-radius:10px;
+    font-family: 'Comfortaa', cursive;
+      
+    }
+    
+}
+
+}

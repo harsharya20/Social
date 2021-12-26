@@ -19,11 +19,27 @@ let posts= await Post.find({})
 }).populate('likes');
 
 let users= await User.find({});
+let loggedInUser;
+        if(req.user){   //  Find all the friends of the user if user is logged in
+            loggedInUser = await User.findById(req.user._id)
+            .populate({
+                path: 'friendships',
+                populate: [
+                    {
+                        path: 'from_user'  // ***** TODO: Don't set the password to browser  *****
+                    },
+                    {
+                        path: 'to_user'   // ***** TODO: Don't set the password to browser  *****
+                    }
+                ]
+            });
 
+        }
 return res.render('home',{
   title: "Codeial | Home",
     posts : posts,
-    all_users: users
+    all_users: users,
+    loggedInUser:loggedInUser
 });
   } 
   catch(err){

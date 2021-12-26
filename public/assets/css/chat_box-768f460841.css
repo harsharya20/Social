@@ -9,7 +9,7 @@ sub {
   border: 1px dashed grey;
   height: 350px;
   width: 300px;
-  background: #111519;
+  background: rgb(244, 199, 255);
   padding: 5px;
   box-shadow: 1px 1px 1px 1px lightgrey;
   display: none;
@@ -23,7 +23,7 @@ sub {
     list-style: none;
     padding: 10px;
     height: 70%;
-    background-color: #111519;
+    background-color: rgb(244, 199, 255);
     overflow: auto;
     color: white;
     display: block; }
@@ -63,11 +63,11 @@ sub {
       font-size: 25px;
       color: white;
       border: none;
-      background: hotpink;
+      background: rgb(253, 99, 99);
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px; }
       #user-chat-box #chat-message-input-container #send-message:hover {
-        background: deeppink; }
+        background: rgb(255, 67, 53); }
 
 #message {
   height: 2rem;
