@@ -11,14 +11,14 @@
     margin: 0 1rem 0 1rem; }
     .comment-style .delete-comment-button:hover {
       background-color: red;
-      color: black; }
+      color: rgb(160, 255, 250); }
   .comment-style #commenter {
     font-family: monospace;
-    color: pink; }
+    color: rgb(0, 0, 0); }
   .comment-style .like a {
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: #f8a0f4;
     font-size: 0.7rem;
     padding-left: 4px;
     width: 2rem; }

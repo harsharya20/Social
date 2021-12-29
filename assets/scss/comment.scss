@@ -14,20 +14,20 @@
     margin: 0 1rem 0 1rem;
     &:hover{
         background-color:red;
-        color: black;
+        color: rgb(160, 255, 250);
     }
     }
 
  	#commenter{
  		font-family: monospace;
- 		color: pink;
+ 		color: rgb(0, 0, 0);
  	}
  	.like{
 
  		a{
            text-decoration: none;
-           color: white;
-           background-color: black;
+           color: rgb(0, 0, 0);
+           background-color: #f8a0f4;
            font-size: 0.7rem;
            padding-left: 4px;
            width: 2rem;

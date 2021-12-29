@@ -10,6 +10,7 @@ class PostComments{
         this.postId = postId;
         this.postContainer = $(`#post-${postId}`);
         this.newCommentForm = $(`#post-${postId}-comments-form`);
+        //console.log(this.newCommentForm,"*******");
 
         this.createComment(postId);
 
@@ -26,6 +27,7 @@ class PostComments{
         let pSelf = this;
         this.newCommentForm.submit(function(e){
             e.preventDefault();
+            
             let self = this;
 
             $.ajax({
@@ -60,26 +62,37 @@ class PostComments{
 
     newCommentDom(comment){
         // I've added a class 'delete-comment-button' to the delete comment link and also id to the comment's li
-        return $(`<li id="comment-${ comment._id }">
-                        <p>
-                            
-                            <small>
-                                <a class="delete-comment-button" href="/comments/destroy/${comment._id}">X</a>
-                            </small>
-                            
-                            ${comment.content}
-                            <br>
-                            <small>
-                                ${comment.user.name}
-                            </small>
-                            <small>
-                            <a class="toggle-like-button" data-likes= "0" href= "/likes/toggle/?id=${comment._id}&type=Comment">
-                            0 Likes
-                            </a>
-                            </small>
-                        </p>    
+        return $(`
+        <li id ="comment-${comment._id }" class="comment-style">
 
-                </li>`);
+
+        <small id="comment-content">
+        ${ comment.content }
+        </small>
+    
+
+                <small>
+                        <a class="delete-comment-button" href="/comments/destroy/${ comment._id }">X</a>
+                </small>
+                
+                <br>
+        
+        <small id="commenter">
+        ${ comment.user.name }
+        </small>
+        
+        <small class="like">
+               
+                    <a class="toggle-like-button" data-likes= "${ comment.likes.length }" href="/likes/toggle/?id=${comment._id}&type=Comment">
+                    ${ comment.likes.length } <span class="heart">♥️</span>
+                </a>
+          
+            
+            
+        </small>
+
+</li>
+        `);
     }
 
 

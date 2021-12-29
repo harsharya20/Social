@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="<%= assetPath('css/comment.css') %>">
 <li id ="comment-<%= comment._id %>" class="comment-style">
 
 
@@ -5,9 +6,9 @@
                 <%= comment.content %>
         </small>
     
-        <% if(locals.user && locals.user.id == comment.user){ %>
+        <% if(locals.user && locals.user.id == comment.user.id){ %>
                 <small>
-                        <a class="delete-comment-button" href="/comments/destroy/<%= comment.id %>">X</a>
+                        <a class="delete-comment-button" href="/comments/destroy/<%= comment._id %>">X</a>
                 </small>
                 <% } %>
                 <br>

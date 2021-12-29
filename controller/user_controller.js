@@ -1,7 +1,7 @@
 const User =require('../models/user') ;
 const fs = require('fs');
 const path = require('path');
- 
+const { check, sanitizebody } = require('express-validator');
  module.exports.profile=function(req,res){
      User.findById(req.params.id,function(err,user){
        return res.render('user_profile',{
@@ -77,6 +77,22 @@ module.exports.signIn =function(req,res){
 }
 
 //grt the sign up data
+// module.exports.form=[
+//  check('password').trim().notEmpty().withMessage('Password required')
+//     .isLength({ min: 5 }).withMessage('password must be minimum 5 length')
+//     .matches(/(?=.*?[A-Z])/).withMessage('At least one Uppercase')
+//     .matches(/(?=.*?[a-z])/).withMessage('At least one Lowercase')
+//     .matches(/(?=.*?[0-9])/).withMessage('At least one Number')
+//     .matches(/(?=.*?[#?!@$%^&*-])/).withMessage('At least one special character')
+//     .not().matches(/^$|\s+/).withMessage('White space not allowed'),
+//     check('confirm_password').custom((value, { req }) => {
+//         if (value !== req.body.password) {
+//               throw new Error('Password Confirmation does not match password');
+//          }
+//          return true;
+//     })
+//  ]
+
 module.exports.create =function(req,res){
    if(req.body.password !=req.body.confirm_password){
        req.flash('error', 'Password not matched! Try Again');

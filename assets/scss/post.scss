@@ -33,7 +33,7 @@
     .toggle-like-button{
     	     text-decoration: none;
            color: white;
-           background-color: #111519;
+           background-color: #f8a0f4;
            border-top-left-radius: 10px;
            border-top-right-radius: 10px;
            	margin: 0.4rem;
@@ -44,14 +44,14 @@
    .delete-post-button{
    	text-decoration: none;
    	color: black;
+	
    	font-size: 1.3rem;
-   	background-color:gray;
-   	border-top-left-radius:10px;
-   	border-top-right-radius:10px;
+   	background-color:rgb(250, 29, 66);
+   	border-radius: 50%;
 
    	margin: 0 1rem 0 1rem;
    	&:hover{
-   		color: red;
+   		color: rgb(255, 255, 255);
    	}
    }
 }
