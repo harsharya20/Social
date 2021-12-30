@@ -2,7 +2,7 @@
     // method to submit the form data for new post using AJAX
     let createPost = function(){
         let newPostForm = $('#new-post-form');
-
+             
         newPostForm.submit(function(e){
             e.preventDefault();
 
@@ -11,8 +11,9 @@
                 url: '/posts/create',
                 data: newPostForm.serialize(),
                 success: function(data){
-                   // console.log(data,"******");
-                    let newPost = newPostDom(data.data.post);
+                   //console.log(data,"******");
+                    let newPost = newPostDom(data.data.post,data.data.userDet);
+                   // console.log(data.data.post);
                     $('#posts-list-container>ul').prepend(newPost);
                     deletePost($(' .delete-post-button', newPost));
 
@@ -37,16 +38,17 @@
             });
         });
     }
-
+  
 
     // method to create a post in DOM
-    let newPostDom = function(post){
+    let newPostDom = function(post,name){
+       // console.log("haths",post);
         // CHANGE :: show the count of zero likes on this post
         return $(`
         <li  id="post-${post._id }" class="new-post">
 <div> 
    <small id="post-user">
-   ${ post.user.name }
+   ${ name }
    </small>
    <small id="post-content">
    ${ post.content }
@@ -56,8 +58,8 @@
 
    <small>
        
-           <a class="toggle-like-button" data-likes="${ post.like.length }" href="/likes/toggle/?id=${post._id}&type=Post">
-              <span class="toggle-like-button" style="color:white;"> ${ post.like.length }  </span>
+           <a class="toggle-like-button" data-likes="${ post.likes.length }" href="/likes/toggle/?id=${post._id}&type=Post">
+              <span class="toggle-like-button" style="color:white;"> ${ post.likes.length }  </span>
              <span class="toggle-like-button">♥</span>
            </a>
        
@@ -66,7 +68,7 @@
    </small>
     
    <small>
-       <a class="delete-post-button"  href="/posts/destroy/${ post.id }">X</a>
+       <a class="delete-post-button"  href="/posts/destroy/${ post._id }">X</a>
    </small>
   
 

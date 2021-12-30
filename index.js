@@ -47,7 +47,7 @@ app.use(express.urlencoded({extended: false}));
 
 app.use(cookieParser());
 
-
+//console.log("******",express.static(path.join(__dirname, env.asset_path)));
 app.use(express.static(path.join(__dirname, env.asset_path)));
 
 
