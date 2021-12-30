@@ -40,7 +40,7 @@ class ChatEngine{
 
         // CHANGE :: send a message on clicking the send message button
         $('#send-message').click(function(){
-            console.log($('#chat-message-input'));
+           // console.log($('#chat-message-input'));
             let msg = $('#chat-message-input').val();
             
             if(msg != ''){
@@ -54,7 +54,7 @@ class ChatEngine{
         });
 
         self.socket.on('recieve_message', function(data){
-            console.log('message received', data.message);
+           // console.log('message received', data.message);
 
 
             let newMessage = $('<li>');
