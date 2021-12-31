@@ -1,7 +1,7 @@
 
 <link rel="stylesheet" href="<%= assetPath('css/sign_in.css') %>">
 
-
+<!-- 
 <div id="sign-in">
 <h1> SIGN-IN </h1>
 
@@ -25,6 +25,39 @@
 	
     
 </p>
+</div> -->
+
+
+
+
+
+
+<div class="wrapper">
+	<div class="container">
+		<h1>Welcome</h1>
+		
+		<form class="form" action="/users/create-session" method="post">
+			<input type="email" name="email" placeholder="Email" required>
+			<input type="password" name="password" placeholder="Password" autocomplete="off" required>
+			<button type="submit">Sign In</button>
+		</form>
+		<form class="form1" action="/users/auth/google" method="get">
+			<button type="submit" style="background-color: transparent; color:white; ">Google Sign In/Sign Up</button>
+		</form>
+	</div>
+
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
 </div>
-
-

@@ -7,13 +7,14 @@
   "css/layout.css": "css/layout-8aceeda855.css",
   "css/post.css": "css/post-879ea0e6d6.css",
   "css/reset_password.css": "css/reset_password-b4c86415f5.css",
-  "css/sign_in.css": "css/sign_in-226cff78f6.css",
-  "css/sign_up.css": "css/sign_up-e812fa82f0.css",
+  "css/sign_in.css": "css/sign_in-30cf39dbb5.css",
+  "css/sign_up.css": "css/sign_up-a51932a16c.css",
   "css/user_profile.css": "css/user_profile-88411f7699.css",
   "js/chat_engine.js": "js/chat_engine-b8ba047bb9.js",
   "js/friendship.js": "js/friendship-6450110bb7.js",
   "js/home_post_comments.js": "js/home_post_comments-8ea6452898.js",
   "js/home_posts.js": "js/home_posts-edd9d4349d.js",
+  "js/sign_up.js": "js/sign_up-192a8b0e6e.js",
   "js/toggle_friendships.js": "js/toggle_friendships-e4ed33a2ac.js",
   "js/toggle_likes.js": "js/toggle_likes-ff96e5f597.js"
 }

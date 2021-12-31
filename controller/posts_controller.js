@@ -15,8 +15,8 @@ module.exports.create = async function(req,res){
              let userDet =await Post.findOne({user:req.user._id}).populate('user').exec();
 
                
-             console.log("fafafadf",userDet.user.name);
-            console.log("*****");
+            //  console.log("fafafadf",userDet.user.name);
+            // console.log("*****");
              if(req.xhr){
                 
                return res.status(200).json({

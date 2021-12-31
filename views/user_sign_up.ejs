@@ -1,7 +1,8 @@
 
+
 <link rel="stylesheet" href="<%= assetPath('css/sign_up.css') %>">
 
-<div id="sign-up">
+<!-- <div id="sign-up">
 
 <h1> SIGN UP </h1>
 
@@ -31,4 +32,42 @@
 	<a href="/users/auth/google">Google Sign In/Sign Up</a>
 </p>
 
-</div>
+</div> -->
+
+
+<form action="/users/create" method="post">
+	<input id="input-1" type="text"  name="name"  required />
+	<label for="input-1">
+	  <span class="label-text">Name</span>
+	  <span class="nav-dot"></span>
+	  <div class="signup-button-trigger">Sign Up</div>
+	  
+	<div><a href="/users/auth/google" style="position: absolute; margin-left: 44%; top: 70%; ">Google Sign In/Sign Up</a></div>
+	</label>
+	<input id="input-2"  type="email" name="email"  required />
+	<label for="input-2">
+	  <span class="label-text">Email</span>
+	  <span class="nav-dot"></span>
+	</label>
+	<input id="input-3" type="password" name="password"  required />
+	<label for="input-3">
+	  <span class="label-text">Password</span>
+	  <span class="nav-dot"></span>
+	</label>
+	<input id="input-4" type="password" name="confirm_password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required />
+	<label for="input-4">
+	  <span class="label-text">Confirm Password</span>
+	  <span class="nav-dot"></span>
+	</label>
+	<!-- <input id="input-5" type="text" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required />
+	<label for="input-5">
+	  <span class="label-text">Confirm Password</span>
+	  <span class="nav-dot"></span>
+	</label> -->
+	<button type="submit">Create Your Account</button>
+	<p class="tip">Press Tab</p>
+	<div class="signup-button">Sign Up</div>
+  </form>
+
+ 
+  
