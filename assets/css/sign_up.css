@@ -88,7 +88,7 @@ body{
     padding: 0.25em 0;
     border: 0;
     outline: 0;
-    background: #aee5f3;
+    background: #deecf0;
     color: rgba(0,0,0);
     font-size: 2rem;
     line-height: 3.6rem;
@@ -157,6 +157,7 @@ body{
   .signup-button-trigger {
     opacity: 0;
     pointer-events: auto;
+    position: relative;
  }
   .label-text {
     position: fixed;

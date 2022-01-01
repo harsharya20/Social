@@ -2,10 +2,10 @@
 #sign-in-up-out{
 	display: flex;
 	justify-content: space-between;
-	background: linear-gradient(to right,rgb(207, 226, 233), #fc654a) ;
+	background: linear-gradient(to right,rgb(255, 255, 255),  #817d7d) ;
 	height: 3rem;
 	h1{
-		color: rgb(243, 36, 0);
+		color: rgb(10, 10, 10);
 		&:hover{
           color: #111519;
           cursor: pointer;
@@ -21,7 +21,7 @@
 		margin: 2rem;
 		font-size: large;
 		:hover{
-          color: rgb(14, 48, 161);
+          color: rgb(10, 68, 255);
               }
               a{
 		         text-decoration: none;
@@ -30,3 +30,5 @@
 	      }
        }
 }
+
+
