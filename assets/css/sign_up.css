@@ -128,7 +128,7 @@ body{
  }
   .tip {
     position: fixed;
-    top: 57%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
@@ -141,7 +141,7 @@ body{
     text-align: right;
     transition: opacity 0.25s 0.5s;
  }
-  .signup-button, .signup-button-trigger {
+  .signup-button {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -153,6 +153,19 @@ body{
     pointer-events: none;
     cursor: pointer;
     transition: opacity 0.4s 0.3s;
+ }
+ .signup-button-trigger{
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 70vw;
+  padding: 0.25rem 0;
+  line-height: 3.6rem;
+  text-align: center;
+  pointer-events: none;
+  cursor: pointer;
+  transition: opacity 0.4s 0.3s;
  }
   .signup-button-trigger {
     opacity: 0;
