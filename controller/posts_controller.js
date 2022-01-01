@@ -10,7 +10,7 @@ module.exports.create = async function(req,res){
         content: req.body.content,
         user: req.user._id
             });
-            console.log(post);
+            //console.log(post);
              await post.populate({path:'user',select:'name email'});
              let userDet =await Post.findOne({user:req.user._id}).populate('user').exec();
 
