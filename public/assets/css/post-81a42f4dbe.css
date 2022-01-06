@@ -24,10 +24,9 @@
       float: right; }
     .new-post .toggle-like-button {
       text-decoration: none;
-      color: white;
-      background-color: rgb(151, 152, 255);
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+      color: rgb(0, 0, 0);
+      background-color: rgb(99, 127, 248);
+      
       margin: 0.4rem;
       font-size: 1.3rem;
       color: red; }
@@ -56,10 +55,16 @@
         outline: none; }
     .post-comments .new-comments-form #cmnt-btn {
       border-radius: 10px;
-      background-color: rgb(253, 99, 99);
+      background-color: rgb(130, 169, 253);
       border: none; }
       .post-comments .new-comments-form #cmnt-btn:hover {
-        background-color: rgb(255, 67, 53); }
+        font-family: 'Comfortaa', cursive;
+        background-color: rgb(65, 90, 236); }
     .post-comments .content-style {
+      font-family: 'Comfortaa', cursive;
       color: black; }
-  
+      
+      #cmnt-btn{
+        font-family: 'Comfortaa', cursive;
+        padding:5px;
+      }
