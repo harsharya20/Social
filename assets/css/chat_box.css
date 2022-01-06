@@ -9,7 +9,7 @@ sub {
   border: 1px dashed grey;
   height: 350px;
   width: 300px;
-  background: rgb(244, 199, 255);
+  background: rgb(229, 243, 221);
   padding: 5px;
   box-shadow: 1px 1px 1px 1px lightgrey;
   display: none;
@@ -23,7 +23,7 @@ sub {
     list-style: none;
     padding: 10px;
     height: 70%;
-    background-color: rgb(244, 199, 255);
+    background-color: rgb(229, 243, 221);
     overflow: auto;
     color: white;
     display: block; }
