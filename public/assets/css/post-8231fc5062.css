@@ -56,6 +56,7 @@
     .post-comments .new-comments-form #cmnt-btn {
       border-radius: 10px;
       background-color: rgb(130, 169, 253);
+      padding:5px;
       border: none; }
       .post-comments .new-comments-form #cmnt-btn:hover {
         font-family: 'Comfortaa', cursive;
