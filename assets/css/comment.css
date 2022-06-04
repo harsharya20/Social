@@ -11,7 +11,7 @@
     margin: 0 1rem 0 1rem; }
     .comment-style .delete-comment-button:hover {
       background-color: red;
-      color: rgb(160, 255, 250); }
+      color: rgb(255, 160, 239); }
   .comment-style #commenter {
     font-family: monospace;
     color: rgb(0, 0, 0); }

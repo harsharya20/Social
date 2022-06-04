@@ -36,7 +36,7 @@
 
 
 <form action="/users/create" method="post">
-	<input id="input-1" type="text"  name="name"  required />
+	<input id="input-1" type="text"  name="name" autocomplete="off" required />
 	<label for="input-1">
 	  <span class="label-text">Name</span>
 	  <span class="nav-dot"></span>
@@ -49,12 +49,12 @@
 	  <span class="label-text">Email</span>
 	  <span class="nav-dot"></span>
 	</label>
-	<input id="input-3" type="password" name="password"  required />
+	<input id="input-3" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" required/>
 	<label for="input-3">
 	  <span class="label-text">Password</span>
 	  <span class="nav-dot"></span>
 	</label>
-	<input id="input-4" type="password" name="confirm_password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required />
+	<input id="input-4" type="password" name="confirm_password"  required />
 	<label for="input-4">
 	  <span class="label-text">Confirm Password</span>
 	  <span class="nav-dot"></span>
@@ -65,7 +65,7 @@
 	  <span class="nav-dot"></span>
 	</label> -->
 	<button type="submit">Create Your Account</button>
-	<p class="tip">Press Tab</p>
+	<p class="tip">Press Enter</p>
 	<div class="signup-button">Sign Up</div>
   </form>
 

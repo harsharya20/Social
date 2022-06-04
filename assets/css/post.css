@@ -42,7 +42,7 @@
         color: rgb(255, 255, 255); }
   
   .post-comments {
-    background-color: #c5efff;
+    background-color: #fbc5ff;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px; }
     .post-comments .new-comments-form #create-comment {

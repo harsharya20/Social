@@ -8,7 +8,7 @@ exports.newComment = (comment) => {
     nodeMailer.transporter.sendMail({
       from: 'harshoffice@gmail.com', 
       to: comment.user.email,
-      subject: 'New comment published!', // google account pr jaana 
+      subject: 'New comment published!', // google account  
       html: htmlString
     }, (err, info) => {
         if(err){
